@@ -5,7 +5,7 @@ var router = require("./route")
 const { use } = require('./route')
 
 
-mongoose.connect("mongodb+srv://ssingh756:rkdfbca053@cluster0.vpnq5.mongodb.net/MoviesCollection?retryWrites=true&w=majority").then(()=>{
+mongoose.connect("mongodb+srv://ssingh756:rkdfbca053@cluster0.vpnq5.mongodb.net/movies?retryWrites=true&w=majority").then(()=>{
     console.log("db connected");
     var app = express();
     app.use(bodyParser.urlencoded({extended:false}));
