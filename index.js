@@ -7,15 +7,15 @@ const { use } = require('./route')
 
 mongoose.connect("mongodb+srv://ssingh756:rkdfbca053@cluster0.vpnq5.mongodb.net/stud?retryWrites=true&w=majority").then(()=>{
     console.log("db connected");
-    var app=express();
-    app.use(bodyParser.urlencoded({extended:false}))
-    app.use(express.json())
-    app.use('/api', router)
+    var app = express();
+    app.use(bodyParser.urlencoded({extended:false}));
+    app.use(express.json());
+    app.use('/api', router);
 
     app.listen(process.env.PORT, ()=>{
-        console.log("server started")
+        console.log("server started");
     })
 }).catch((err)=>{
-    console.log(err)
+    console.log(err);
 })
 
