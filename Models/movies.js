@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var moviesSearch = mongoose.Schema({
     name:String,
-    rating:String
+    ratings:String
 
 })
-module.exports = mongoose.model("stud", moviesSearch);
+module.exports = mongoose.model("movies", moviesSearch);
